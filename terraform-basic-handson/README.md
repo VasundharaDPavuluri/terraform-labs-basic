@@ -30,7 +30,8 @@ terraform-basic-handson/
 ├── ec2.tf
 ├── .gitignore
 └── README.md
-
+```
+---
 # Terraform Files
 ## provider.tf
 
