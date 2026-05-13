@@ -19,6 +19,13 @@ AWS Infrastructure Created
 
 ---
 
+## Pre-requisites:
+- Install Git
+- Install Terraform
+- Install AWS CLI
+
+---
+# Implementation - Infra Provisioning:
 ## Step 1 — Create Terraform Files
 Example:
 - provider.tf
