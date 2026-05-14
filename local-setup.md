@@ -1,4 +1,4 @@
-# Flow in Local PC
+# Flow in Local Setup -- PC
 Laptop --> Terraform + AWS CLI --> AWS Authentication --> Terraform Commands --> AWS Infrastructure Created
 
 ---
