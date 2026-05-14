@@ -1,21 +1,5 @@
 # Flow in Local PC
-Laptop
-
-  ↓
-  
-Terraform + AWS CLI
-
-  ↓
-  
-AWS Authentication
-
-  ↓
-  
-Terraform Commands
-
-  ↓
-  
-AWS Infrastructure Created
+Laptop --> Terraform + AWS CLI --> AWS Authentication --> Terraform Commands --> AWS Infrastructure Created
 
 ---
 
