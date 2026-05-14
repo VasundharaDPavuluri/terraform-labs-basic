@@ -46,6 +46,7 @@ terraform-labs-basic/
 ├── terraform-basic-handson/
 ├── terraform-vpc-handson/
 ├── terraform-vpc-ec2-project/
+├── terraform_var_project/
 └── README.md
 ```
 
@@ -53,9 +54,12 @@ terraform-labs-basic/
 
 # Projects Overview
 
-## Project-1 — Terraform Basic Hands-On
+---
 
-### Topics Covered
+# Project-1 — Terraform Basic Hands-On
+
+## Topics Covered
+
 - Terraform installation
 - AWS CLI configuration
 - IAM User setup
@@ -64,7 +68,8 @@ terraform-labs-basic/
 - Security Group basics
 - Terraform lifecycle commands
 
-### Key Learnings
+## Key Learnings
+
 - Infrastructure as Code (IaC)
 - Terraform workflow
 - AWS authentication
@@ -72,16 +77,18 @@ terraform-labs-basic/
 
 ---
 
-## Project-2 — Terraform VPC Hands-On
+# Project-2 — Terraform VPC Hands-On
 
-### Topics Covered
+## Topics Covered
+
 - VPC creation
 - Public and Private Subnets
 - Internet Gateway
 - Route Tables
 - Route Table Associations
 
-### Key Learnings
+## Key Learnings
+
 - AWS networking basics
 - Public vs Private Subnets
 - Internet routing
@@ -89,70 +96,70 @@ terraform-labs-basic/
 
 ---
 
-## Project-3 — Terraform VPC EC2 Project
+# Project-3 — Terraform VPC EC2 Project
 
-### Topics Covered
+## Topics Covered
+
 - Custom VPC
 - Public Subnet
 - Security Groups
 - EC2 inside custom VPC
-- Terraform Variables
 - Infrastructure dependency mapping
 
-### Project Structure
+## Project Structure
 
 ```text
-terraform_project/
+terraform-vpc-ec2-project/
 ├── provider.tf
-├── variables.tf
 ├── vpc.tf
 ├── subnet.tf
 ├── security-group.tf
 ├── ec2-instance.tf
 ├── outputs.tf
+└── README.md
 ```
+
+## Key Learnings
+
+- VPC + EC2 integration
+- Security Group configuration
+- Public subnet deployment
+- Terraform resource dependencies
 
 ---
 
-# Terraform Files Explained
+# Project-4 — Terraform Variables Project
 
-| File | Purpose |
-|---|---|
-| provider.tf | AWS provider configuration |
-| variables.tf | Define reusable input variables |
-| vpc.tf | Create VPC and networking |
-| subnet.tf | Create public/private subnets |
-| security-group.tf | Configure firewall rules |
-| ec2-instance.tf | Provision EC2 instance |
-| outputs.tf | Display resource outputs |
+## Topics Covered
 
----
+- Terraform Variables
+- Dynamic infrastructure configuration
+- terraform.tfvars
+- Reusable Terraform code
+- Parameterized AWS resources
 
-# Variables in Terraform
+## Project Structure
 
-Variables are used to make Terraform code:
-- reusable
-- dynamic
-- configurable
-
-Instead of hardcoding values directly:
-
-```hcl
-instance_type = "t2.micro"
+```text
+terraform_var_project/
+├── provider.tf
+├── variables.tf
+├── terraform.tfvars
+├── vpc.tf
+├── subnet.tf
+├── security-group.tf
+├── ec2-instance.tf
+├── outputs.tf
+└── README.md
 ```
 
-Terraform variables allow:
+## Key Learnings
 
-```hcl
-instance_type = var.instance_type
-```
-
-This helps reuse the same code across:
-- Dev
-- QA
-- Production
-
-environments.
+- Input Variables
+- Dynamic Terraform values
+- Infrastructure reusability
+- Environment-based configuration
+- Terraform variable references
 
 ---
 
@@ -218,7 +225,7 @@ Deletes Terraform-managed resources.
 
 ---
 
-# Real-Time Architecture Flow
+# Real-Time AWS Architecture Flow
 
 ```text
 Users
@@ -256,18 +263,70 @@ Backend / Database
 
 ---
 
+# Variables in Terraform
+
+Variables are used to make Terraform code:
+- reusable
+- dynamic
+- configurable
+
+Example:
+
+```hcl
+instance_type = var.instance_type
+```
+
+instead of:
+
+```hcl
+instance_type = "t2.micro"
+```
+
+---
+
+# Important Terraform Files
+
+| File | Purpose |
+|---|---|
+| provider.tf | Provider configuration |
+| variables.tf | Define input variables |
+| terraform.tfvars | Variable values |
+| outputs.tf | Display outputs |
+| .terraform.lock.hcl | Provider version lock file |
+
+---
+
+# Git Best Practices Used
+
+## Tracked Files
+
+- `.tf` files
+- `README.md`
+- `.terraform.lock.hcl`
+- `.gitignore`
+
+## Ignored Files
+
+```gitignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+```
+
+---
+
 # Learning Outcomes
 
 This repository helps understand:
-- Infrastructure as Code (IaC)
 - Terraform fundamentals
 - AWS networking
 - EC2 provisioning
-- Resource dependencies
 - Security Groups
-- Route Tables
+- VPC architecture
 - Terraform Variables
 - Infrastructure automation
+- Resource dependencies
+- Infrastructure as Code (IaC)
 
 ---
 
@@ -276,9 +335,9 @@ This repository helps understand:
 Planned advanced topics:
 - Terraform Modules
 - Remote Backend (S3 + DynamoDB)
-- ALB (Application Load Balancer)
-- Auto Scaling
 - NAT Gateway
+- Application Load Balancer (ALB)
+- Auto Scaling
 - RDS Integration
 - Jenkins CI/CD
 - EKS Terraform deployment
