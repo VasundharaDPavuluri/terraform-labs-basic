@@ -1,4 +1,4 @@
-# Flow
+# Flow in Local PC
 Laptop
 
   ↓
@@ -19,7 +19,7 @@ AWS Infrastructure Created
 
 ---
 
-## Pre-requisites:
+## Pre-requisites: Required installations in PC.
 - Install Git
 - Install Terraform
 - Install AWS CLI
@@ -68,7 +68,7 @@ aws configure
 Provide:
 - Access Key
 - Secret Key
-- Region → ap-south-1
+- Region → ap-south-1 (or any other)
 - Output → json 
 ________________________________________
 ## Step 5 — Verify Authentication
@@ -79,7 +79,7 @@ aws sts get-caller-identity
 ```
 If this works:
 
-Terraform can now access AWS
+Terraform can now access AWS.
 ________________________________________
 ## Step 6 — Run Terraform Commands
 
@@ -116,7 +116,7 @@ terraform validate
 ```
 We should see 'Success' message.
 
-Also, run
+Also, run terraform destroy (only if handson to save the cost)
 ```bash
 terraform destroy --auto-approve
 ```
