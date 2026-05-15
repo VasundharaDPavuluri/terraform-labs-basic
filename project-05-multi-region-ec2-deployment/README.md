@@ -255,6 +255,8 @@ yes
 
 Terraform provisions EC2 instance in Oregon region.
 
+<img width="933" height="189" alt="Screenshot 2026-05-15 165719" src="https://github.com/user-attachments/assets/3c945d66-632a-4668-a74c-9d28161c4366" />
+
 ---
 
 # Step 9 — Verify in AWS Console
@@ -269,6 +271,8 @@ Verify:
 - EC2 instance created
 - Public IP assigned
 - Default VPC used
+
+<img width="1908" height="527" alt="image" src="https://github.com/user-attachments/assets/ebdd59fe-53ad-4d68-b00a-ae63c86ed53e" />
 
 ---
 
