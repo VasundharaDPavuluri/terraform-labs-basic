@@ -252,6 +252,14 @@ using:
 ```text
 outputs.tf
 ```
+---
+On AWS:
+
+<img width="1917" height="309" alt="Screenshot 2026-05-14 142455-1" src="https://github.com/user-attachments/assets/a95b90d2-30eb-4ac5-b93f-a32e0e072e02" />
+<img width="1917" height="338" alt="Screenshot 2026-05-14 142455-2" src="https://github.com/user-attachments/assets/53b75ccb-8931-41c5-ae9b-cf49daeae281" />
+<img width="1918" height="339" alt="Screenshot 2026-05-14 142417" src="https://github.com/user-attachments/assets/241c5427-0f4c-4ee6-be2f-86cd011738bd" />
+<img width="1919" height="244" alt="Screenshot 2026-05-14 142435-1" src="https://github.com/user-attachments/assets/959f1428-a714-4d53-8772-5930d6000675" />
+
 
 ---
 
