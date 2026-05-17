@@ -395,6 +395,10 @@ AWS → S3
 
 Verify backend bucket exists.
 
+### Screenshot: backend bucket created
+
+<img width="1919" height="538" alt="s3-bucket-tf-backend" src="https://github.com/user-attachments/assets/4902e9d5-0788-43a9-b7a2-665465b16298" />
+
 ---
 
 # Verify DynamoDB Table
@@ -407,12 +411,18 @@ AWS → DynamoDB
 
 Verify lock table exists.
 
+### Screenshot: lock table created
+
+<img width="1919" height="308" alt="tf-backend-dynamodb-table" src="https://github.com/user-attachments/assets/167bea84-5915-474f-bd3a-1cd7dc90c21b" />
+
 ---
 
 # Future Usage
 
-Future Terraform projects will use:
-
+Future Terraform projects will use: 
+```bash
+backend.tf
+```
 ```hcl
 terraform {
   backend "s3" {
