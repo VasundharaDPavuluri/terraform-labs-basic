@@ -536,6 +536,18 @@ Creates:
 - SG
 - EC2
 
+### AWS Console - VPC, Subnet & route table Created
+
+<img width="1919" height="273" alt="Screenshot 2026-05-18 141326" src="https://github.com/user-attachments/assets/e4c83137-9ba0-4ad0-957e-1d8f567262ad" />
+
+### AWS Console - Security Group created
+
+<img width="1919" height="239" alt="Screenshot 2026-05-18 141339" src="https://github.com/user-attachments/assets/46235960-8011-473f-9ccc-2bf9005d5481" />
+
+### AWS Console - EC2 Instance
+
+<img width="1919" height="231" alt="Screenshot 2026-05-18 141314" src="https://github.com/user-attachments/assets/50845e7a-ad22-499a-b9f2-5496edd21ab1" />
+
 ---
 
 # Destroy Infrastructure
@@ -588,74 +600,6 @@ Terraform displays:
 - SG ID
 - EC2 public IP
 - EC2 public DNS
-
----
-
-# Troubleshooting
-
----
-
-## Issue — Unsupported Block Type
-
-### Cause
-
-Provider block placed inside:
-```text
-terraform { }
-```
-
-### Fix
-
-Keep:
-- terraform block
-- provider block
-
-separate.
-
----
-
-## Issue — BucketAlreadyExists
-
-### Cause
-
-S3 bucket names are globally unique.
-
-### Fix
-
-Use unique bucket name.
-
----
-
-## Issue — State Lock Error
-
-### Cause
-
-DynamoDB lock issue.
-
-### Fix
-
-Wait for lock release or use:
-
-```bash
-terraform destroy -lock=false
-```
-
-carefully.
-
----
-
-## Issue — BucketNotEmpty
-
-### Cause
-
-S3 bucket still contains:
-```text
-terraform.tfstate
-```
-
-### Fix
-
-Delete all objects inside bucket before deleting bucket.
 
 ---
 
