@@ -429,6 +429,19 @@ Verify:
 - subnet created
 - backend state file updated in S3
 
+<img width="1919" height="449" alt="Screenshot 2026-05-17 225519" src="https://github.com/user-attachments/assets/ca0e7053-f3c8-4324-8e60-0867965ce62a" />
+
+<img width="1899" height="723" alt="Screenshot 2026-05-17 225612" src="https://github.com/user-attachments/assets/8ad612ca-5da5-4343-8660-3b2c52c3e065" />
+
+### VPC & Components
+<img width="1919" height="703" alt="Screenshot 2026-05-17 224908" src="https://github.com/user-attachments/assets/bfc383f0-09ab-42c3-b87c-ee4c6e45be45" />
+
+### Security-Group
+<img width="1919" height="670" alt="Screenshot 2026-05-17 224941" src="https://github.com/user-attachments/assets/a3190e06-7628-42e3-b53d-fa2419f479ec" />
+
+### EC2 Instance
+<img width="1919" height="312" alt="Screenshot 2026-05-17 224859" src="https://github.com/user-attachments/assets/daca7346-6c8d-4445-ace2-b9b46019dc81" />
+
 ---
 
 # Terraform State Commands
